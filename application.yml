@@ -1,0 +1,8 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+      - id: service_route
+        uri: http://www.google.com
+        predicates:
+        - Path=/
